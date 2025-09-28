@@ -1,6 +1,6 @@
-site_name: Mòdul XXXX - Nom del mòdul
+site_name: Mòdul 0225 - Xarxes locals
 site_description: Publicació progressiva des d'un sol repositori
-site_url: https://ELTEUUSUARI.github.io/NOM-DEL-REPO/
+site_url: https://jpardo20.github.io/xlo-apunts/
 
 nav:
   - Inici: index.md
