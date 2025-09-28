@@ -1,0 +1,31 @@
+site_name: Mòdul XXXX - Nom del mòdul
+site_description: Publicació progressiva des d'un sol repositori
+site_url: https://ELTEUUSUARI.github.io/NOM-DEL-REPO/
+
+nav:
+  - Inici: index.md
+  - Continguts: continguts.md
+  # Exemple de secció quan tinguis pàgines:
+  # - UD01:
+  #     - Introducció: unitats-didactiques/ud01-.../index.md
+
+theme:
+  name: material
+  language: ca
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+
+extra_css:
+  - assets/styles.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true

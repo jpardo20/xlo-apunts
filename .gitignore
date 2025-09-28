@@ -1,0 +1,12 @@
+# Python / mkdocs
+__pycache__/
+site/
+
+# Office/LibreOffice temporals
+**/.~lock.*#
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# Cache del convertidor
+.publish-cache.json
