@@ -1,0 +1,16 @@
+{
+  "presentations": [
+    {
+      "id": "presentacio-ip-mascara",
+      "title": "IP i Màscares de Subxarxa — 1r SMX",
+      "file": "presentacio-ip-mascara.html",
+      "tags": [
+        "0225",
+        "xarxes locals",
+        "ipv4",
+        "màscares"
+      ],
+      "updated": "2025-10-02T22:17:01.816132Z"
+    }
+  ]
+}

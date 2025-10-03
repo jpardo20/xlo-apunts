@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "curs": "2025-2026",
+    "promocio": "SMX-2025-2027",
+    "centre": "Digitechfp"
+  },
+  "alumnes": [
+    [
+      {
+        "firstname": "Joan",
+        "lastname": "Pardo Campillo",
+        "email": "jpardo20@digitechfp.com"
+      }
+    ]
+  ]
+}

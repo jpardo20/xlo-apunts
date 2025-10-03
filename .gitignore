@@ -10,3 +10,8 @@ site/
 
 # Cache del convertidor
 .publish-cache.json
+README copy.md
+*.zip
+xlo-pre03-elements-d-una-xarxa.*
+presentacions/README.txt
+*.sql

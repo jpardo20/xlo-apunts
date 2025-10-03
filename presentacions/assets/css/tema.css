@@ -1,0 +1,54 @@
+:root{
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --fg:#0b1320;
+  --muted:#4b5563;
+  --accent:#0b57d0;
+  --accent-2:#1d4ed8;
+  --border:rgba(0,0,0,.12);
+  --radius:16px;
+}
+html,body{background:var(--bg); color:var(--fg);}
+a{color:var(--accent)}
+.reveal .slides{ text-align:left; }
+.reveal h1,.reveal h2,.reveal h3{letter-spacing:.2px}
+.reveal section{
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.00));
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px !important;
+}
+.reveal .progress{background:rgba(0,0,0,.08)}
+.reveal .progress span{background:var(--accent)}
+.reveal pre code{background:#f1f5f9; border:1px solid var(--border); border-radius:12px;}
+/* Botó crida a l'acció dins markdown */
+.reveal section a.button{
+  display:inline-block; padding:12px 18px; border-radius:12px;
+  background: var(--accent); color:#fff !important; text-decoration:none; font-weight:700;
+  border:1px solid transparent;
+}
+.reveal section a.button.outline{
+  background:#fff; color:var(--accent) !important; border-color:var(--accent);
+}
+/* Activity page (activitat.html) */
+body.activity { background: var(--bg); color: var(--fg); }
+.activity .card, .activity .pregunta { background: var(--card); border-color: var(--border); }
+.activity select, .activity input, .activity button { color: var(--fg); }
+.activity select { background: #fff; border-color: var(--border); }
+.activity .btn{ background: var(--accent); border-color: transparent; color:#fff; }
+.activity .btn.secondary{ background: transparent; border-color: var(--accent); color: var(--accent); }
+.activity .tag{ background: #eef2f7; border-color: var(--border); color: var(--muted); }
+.activity label{display:flex; align-items:center; gap:10px; cursor:pointer}
+.activity input[type="radio"], .activity input[type="checkbox"]{accent-color: var(--accent)}
+.header-brand {
+  display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:12px 16px; border:1px solid var(--border); border-radius: var(--radius);
+  background: #ffffff;
+  margin-bottom: 16px;
+}
+.header-brand .logos{display:flex; align-items:center; gap:16px}
+.header-brand img{height:42px; object-fit:contain;}
+.header-brand .title{font-weight:600; letter-spacing:.2px}
+
+/* Ensure reveal controls are visible */
+.reveal .controls{opacity:1!important;visibility:visible!important}
