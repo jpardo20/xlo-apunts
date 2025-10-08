@@ -4,8 +4,8 @@ site_url: https://jpardo20.github.io/xlo-apunts/
 
 nav:
   - Inici: index.md
-  - Adreça IP i màscara de subxarxa (pres): presentacio-ip-mascara.md
-  - Activitat 2 - IPs, màscares, xarxa i broadcast: ./activitats/activitat.html
+  - Adreça IP i màscara de subxarxa (pres): presentacio-ip-mascara.html
+  - Activitat 2 - IPs, màscares, xarxa i broadcast: ./activitat/ip-mascara/activitat.html
   # Exemple de secció quan tinguis pàgines:
   # - UD01:
   #     - Introducció: unitats-didactiques/ud01-.../index.md

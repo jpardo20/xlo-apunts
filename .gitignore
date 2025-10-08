@@ -15,3 +15,5 @@ README copy.md
 xlo-pre03-elements-d-una-xarxa.*
 presentacions/README.txt
 *.sql
+altres/
+.gitignore
