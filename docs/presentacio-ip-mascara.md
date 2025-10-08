@@ -1,4 +1,4 @@
-## adreça IP i màscara de subxarxa
+## Adreça IP i màscara de subxarxa
 - Entendre què és una **adreça IP** i el seu format.
 - Distingir part de **xarxa** vs part de **host**.
 - Conèixer classes d’IP i màscares per defecte.
