@@ -121,7 +121,7 @@
 
 ---
 
-## 5) Rúbrica d’avaluació (100 punts)
+## 5) Rúbrica d’avaluació (10 punts)
 
 | Criteri | Descripció | Pes |
 |---|---|---|
@@ -130,8 +130,6 @@
 | **Demo funcional** | Demo real i visible (o vídeo curt) + interpretació de paquets | **25%** |
 | **Materials de suport** | Fitxa pràctica útil + full de comandes + pcap anotat | **15%** |
 | **Comunicació i Q&A** | Vocabulari i respostes clares; seguretat i bones pràctiques | **10%** |
-
-> **Per aprovar** cal assolir **mínim 12/25** a “Demo funcional”.
 
 ---
 
@@ -149,10 +147,10 @@
 
 ---
 
-## 7) Planificació en 2 sessions (orientativa)
+## 7) Planificació en 2 hores
 
-- **Sessió 1**: A–D (4 exposicions ≈ 48’ + transicions)  
-- **Sessió 2**: E–G (3 exposicions ≈ 36’) + 15’ per fer 1 activitat ràpida de la fitxa de cada expositor
+- **1a hora**: A–D (4 exposicions ≈ 48’ + transicions)  
+- **2a hora**: E–G (3 exposicions ≈ 36’) + 15’ per fer 1 activitat ràpida de la fitxa de cada expositor
 
 ---
 
