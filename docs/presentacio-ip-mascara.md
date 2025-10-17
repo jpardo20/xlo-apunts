@@ -27,7 +27,7 @@ Note:
 - IP completa
    - **`32 bits`** = **`4 octets`**.
 
---
+----
 
 - Exemples vàlids:
    - **`10.0.0.1`**,
@@ -57,11 +57,11 @@ Note:
 
 ### **Classe A**: **`1.0.0.0`** – **`126.255.255.255`** → màscara per defecte **`/8`**.
 
--- 
+---- 
 
 ### - **Classe B**: **`128.0.0.0`** – **`191.255.255.255`** → màscara per defecte **`/16`**.
 
---
+----
 ### 
 - **Classe C**: **`192.0.0.0`** – **`223.255.255.255`** → màscara per defecte **`/24`**.
 
@@ -88,11 +88,11 @@ Note:
 - En una subxarxa hi ha:
   - **Adreça de *xarxa*** la primera
      - tots els bits d'**`host`** a **`0`**
-  - **Adreça de **broadcast**** l’última
+  - **Adreça de **broadcast--- l’última
      - tots els bits d'**`host`** a **`1`**
   - **Rang d’hosts** 
      - el que hi ha al mig.
---
+----
 - Amb **`/24`** (**`255.255.255.0`**): 
      - <u>es fixen 3 octets</u> per a la **xarxa** i
      - <u>l’últim octet</u> és per als **hosts**.
@@ -103,7 +103,7 @@ Note:
 
 ## Taula ràpida
 | Prefix | Màscara            | Xarxa/Host<br>visió ràpida|
-|-------:|--------------------|----------------------------|
+|-------:|----------------------|----------------------------|
 | /8     | 255.0.0.0          | X . H . H . H              |
 | /16    | 255.255.0.0        | X . X . H . H              |
 | /24    | 255.255.255.0      | X . X . X . H              |
@@ -123,7 +123,7 @@ Note:
 - Remarca que aquest mètode funciona perfecte per /8, /16, /24 i és suficient per l’activitat.
 - Si l’alumnat pregunta per /25, /26… digues que és el següent pas del temari (subxarxes avançades).
 
---
+----
 
 ## Exemple 1
 
@@ -208,7 +208,7 @@ Note:
 1. Identifica **classe** i **màscara per defecte** (context).  
 2. Aplica el **prefix donat** per l’exercici (/8, /16, /24).  
 3. Marca **X** i **H** segons la taula.  
-4. Calcula **xarxa**, ****broadcast**** i **rang d’hosts**.  
+4. Calcula **xarxa**, ---broadcast--- i **rang d’hosts**.  
 5. Revisa amb un company/a (detecció d’errors ràpida).
 Note:
 - Dona 5–10 minuts per fer els dos primers ítems en parelles, després posa en comú.
@@ -234,7 +234,7 @@ Note:
 
 ## Lliurament i criteris (activitat)
 - Treballa els ítems **exactament** com a l’enunciat.
-- Escriu clarament: **classe**, **màscara per defecte**, **xarxa**, ****broadcast**** i **rang** si cal.
+- Escriu clarament: **classe**, **màscara per defecte**, **xarxa**, ---broadcast--- i **rang** si cal.
 - Justifica en una línia el mètode emprat (taula X/H).
 Note:
 - Explica com s’avaluarà: correcció de càlculs i claredat de la resposta.

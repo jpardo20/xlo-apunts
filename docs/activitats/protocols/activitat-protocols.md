@@ -12,15 +12,25 @@
 
 | Alumne | Protocol (focus) | Objectiu clau | Idea de demo breu (≤10’) | Eines suggerides |
 |---|---|---|---|---|
-| A | **DHCP** (DORA, lloguers, relay) | Adreçament automàtic i opcions | `ipconfig /renew` o `dhclient`, aixecar un DHCP (p.ex. dnsmasq) i veure el cicle DORA amb Wireshark (`bootp`) | Wireshark, dnsmasq/ISC-DHCP, CLI |
-| B | **DNS** (A/AAAA, CNAME, MX, TTL, recurse/caching) | Resoldre noms i interpretar registres | Fer `dig/nslookup` a diversos dominis, canviar TTL i observar caché | `dig`, `nslookup`, Pi-hole o bind, Wireshark (`dns`) |
-| C | **HTTP/HTTPS + TLS** (mètodes, codis, capçaleres, handshake TLS) | Funcionament web i seguretat bàsica | `curl -I http://` vs `https://`, DevTools, `openssl s_client`, paquets TLS | curl, navegador, OpenSSL, Wireshark (`http`,`tls`) |
-| D | **SMTP/IMAP/POP3** (flux correu, ports, STARTTLS) | Entrega i lectura de correu | Enviar correu entre dos comptes; `telnet` a SMTP; llegir via IMAP; captures | Client correu, telnet/netcat, Wireshark (`smtp`,`imap`) |
-| E | **FTP/FTPS/SFTP** (actiu/passiu, seguretat) | Diferenciar protocols i modes | Servidor FTP, pujar fitxer amb FileZilla en actiu/passiu; comparar amb SFTP | vsftpd/FileZilla, SSH, Wireshark (`ftp`) |
-| F | **VLAN 802.1Q** (etiquetatge, access/trunk, PVID) | Segmentació L2 i etiquetatge **802.1Q** | Configurar **VLANs** en switch (o Linux subinterfaces), provar connectivitat i capturar el **tag 802.1Q** | Packet Tracer/GNS3 o switch gestionable, Linux `ip link`, Wireshark (`vlan`) |
-| G | **SNMP & NTP** (monitoratge i temps) | Monitorització i sincronització horària | `snmpwalk` sobre `snmpd`; comprovar NTP amb `timedatectl`; perquè el temps coherent importa | snmpd/snmpwalk, `timedatectl`/`w32tm`, Wireshark (`snmp`,`ntp`) |
+| Kristina | **DHCP** (DORA, lloguers, relay) | Adreçament automàtic i opcions | `ipconfig /renew` o `dhclient`, aixecar un DHCP (p.ex. dnsmasq) i veure el cicle DORA amb Wireshark (`bootp`) | Wireshark, dnsmasq/ISC-DHCP, CLI |
+| Lorena | **DNS** (A/AAAA, CNAME, MX, TTL, recurse/caching) | Resoldre noms i interpretar registres | Fer `dig/nslookup` a diversos dominis, canviar TTL i observar caché | `dig`, `nslookup`, Pi-hole o bind, Wireshark (`dns`) |
+| Merouan | **HTTP/HTTPS + TLS** (mètodes, codis, capçaleres, handshake TLS) | Funcionament web i seguretat bàsica | `curl -I http://` vs `https://`, DevTools, `openssl s_client`, paquets TLS | curl, navegador, OpenSSL, Wireshark (`http`,`tls`) |
+| Pau | **SMTP/IMAP/POP3** (flux correu, ports, STARTTLS) | Entrega i lectura de correu | Enviar correu entre dos comptes; `telnet` a SMTP; llegir via IMAP; captures | Client correu, telnet/netcat, Wireshark (`smtp`,`imap`) |
+| Joao | **FTP/FTPS/SFTP** (actiu/passiu, seguretat) | Diferenciar protocols i modes | Servidor FTP, pujar fitxer amb FileZilla en actiu/passiu; comparar amb SFTP | vsftpd/FileZilla, SSH, Wireshark (`ftp`) |
+| Clemente | **VLAN 802.1Q** (etiquetatge, access/trunk, PVID) | Segmentació L2 i etiquetatge **802.1Q** | Configurar **VLANs** en switch (o Linux subinterfaces), provar connectivitat i capturar el **tag 802.1Q** | Packet Tracer/GNS3 o switch gestionable, Linux `ip link`, Wireshark (`vlan`) |
+| Marc | **SNMP & NTP** (monitoratge i temps) | Monitorització i sincronització horària | `snmpwalk` sobre `snmpd`; comprovar NTP amb `timedatectl`; perquè el temps coherent importa | snmpd/snmpwalk, `timedatectl`/`w32tm`, Wireshark (`snmp`,`ntp`) |
 
-> Alternatives si calen canvis: **SSH vs Telnet**, **SMB/CIFS**, **IPv6 (SLAAC/ND)** o **NAT**.
+### Assignació:
+
+|Grup|Tema|Alumne|
+|----|----|----|
+|A|DHCP|Kristina|
+|B|DNS|Lorena|
+|C|HTTP/HTTPS + TLS|Merouan|
+|D|SMTP/IMAP/POP3|Pau|
+|E|FTP/FTPS/SFTP|Joao|
+|F|VLAN 802.1Q|Clemente|
+|G|SNMP & NTP|Marc|
 
 ---
 

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activitat 2 - IPs, màscares, xarxa i broadcast</title>
+  <link rel="stylesheet" href="./css/tema.css">
+  <style>
+    :root {
+      --fg:#111; --bg:#fff; --muted:#666; --card:#fafafa; --border:#ddd;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px;line-height:1.45}
+    h1,h2,h3{margin:0 0 8px}
+    .subtle{color:var(--muted);font-size:.95rem}
+    .wrap{max-width:900px;margin:0 auto}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    label{display:flex; align-items:center; gap:8px; cursor:pointer; margin:6px 0}
+    input[type="radio"], input[type="checkbox"]{margin:0; accent-color:#111}
+    select, button{font:inherit}
+    select{padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:#fff;min-width:280px}
+    .pregunta{padding:14px;border:1px solid var(--border);border-radius:10px;background:#fff;margin:16px 0}
+    .pregunta h3{font-size:1.05rem;margin:0 0 10px}
+    .footer{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid #111;background:#111;color:#fff;cursor:pointer}
+    .btn.secondary{background:#fff;color:#111}
+    .tag{padding:4px 8px;border:1px solid var(--border);border-radius:999px;background:#fff;font-size:.9rem}
+    .small{font-size:.9rem;color:#444}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:720px){.grid-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body class="activity">
+  <div class="header-brand">
+    <div class="title">Activitat · IPs, màscares, xarxa i broadcast</div>
+  </div>
+<div class="wrap">
+  <div class="card">
+    <div class="subtle">ID activitat: <strong>0225_ip_mascara_llarga</strong> · Versió: <strong>1.0</strong></div>
+    <h1>Xarxes Locals — IPs, màscares, xarxa i broadcast</h1>
+    <p class="small">Respon totes les preguntes.</p>
+    <div class="row">
+      <div style="flex:1 1 360px">
+      </div>
+    </div>
+  </div>
+
+  <form id="quiz">
+
+    <!-- Q1 -->
+    <div class="pregunta" data-qid="q1" data-type="single">
+      <h3>1. Classe de <code>194.168.1.101</code>?</h3>
+      <label><input type="radio" name="q1" value="A">Classe A</label>
+      <label><input type="radio" name="q1" value="B">Classe B</label>
+      <label><input type="radio" name="q1" value="C">Classe C</label>
+    </div>
+
+    <!-- Q2 -->
+    <div class="pregunta" data-qid="q2" data-type="single">
+      <h3>2. Màscara per defecte de <code>194.x.x.x</code>?</h3>
+      <label><input type="radio" name="q2" value="/8">/8 (255.0.0.0)</label>
+      <label><input type="radio" name="q2" value="/16">/16 (255.255.0.0)</label>
+      <label><input type="radio" name="q2" value="/24">/24 (255.255.255.0)</label>
+    </div>
+
+    <!-- Q3 -->
+    <div class="pregunta" data-qid="q3" data-type="single">
+      <h3>3. Classe de <code>192.168.0.5</code>?</h3>
+      <label><input type="radio" name="q3" value="A">Classe A</label>
+      <label><input type="radio" name="q3" value="B">Classe B</label>
+      <label><input type="radio" name="q3" value="C">Classe C</label>
+    </div>
+
+    <!-- Q4 -->
+    <div class="pregunta" data-qid="q4" data-type="single">
+      <h3>4. Màscara per defecte de <code>10.x.x.x</code>?</h3>
+      <label><input type="radio" name="q4" value="/8">/8 (255.0.0.0)</label>
+      <label><input type="radio" name="q4" value="/16">/16 (255.255.0.0)</label>
+      <label><input type="radio" name="q4" value="/24">/24 (255.255.255.0)</label>
+    </div>
+
+    <!-- Q5 -->
+    <div class="pregunta" data-qid="q5" data-type="single">
+      <h3>5. Adreça de <em>xarxa</em> de <code>192.168.0.5 /24</code>?</h3>
+      <label><input type="radio" name="q5" value="192.168.0.0">192.168.0.0</label>
+      <label><input type="radio" name="q5" value="192.168.0.255">192.168.0.255</label>
+      <label><input type="radio" name="q5" value="192.168.255.255">192.168.255.255</label>
+      <label><input type="radio" name="q5" value="192.168.1.0">192.168.1.0</label>
+    </div>
+
+    <!-- Q6 -->
+    <div class="pregunta" data-qid="q6" data-type="single">
+      <h3>6. Adreça de <em>broadcast</em> de <code>192.168.0.5 /24</code>?</h3>
+      <label><input type="radio" name="q6" value="192.168.0.0">192.168.0.0</label>
+      <label><input type="radio" name="q6" value="192.168.0.255">192.168.0.255</label>
+      <label><input type="radio" name="q6" value="192.168.255.255">192.168.255.255</label>
+      <label><input type="radio" name="q6" value="192.168.1.255">192.168.1.255</label>
+    </div>
+
+    <!-- Q7 -->
+    <div class="pregunta" data-qid="q7" data-type="single">
+      <h3>7. Adreça de <em>xarxa</em> de <code>192.168.0.5 /16</code>?</h3>
+      <label><input type="radio" name="q7" value="192.168.0.0">192.168.0.0</label>
+      <label><input type="radio" name="q7" value="192.168.255.0">192.168.255.0</label>
+      <label><input type="radio" name="q7" value="192.168.1.0">192.168.1.0</label>
+      <label><input type="radio" name="q7" value="192.168.0.255">192.168.0.255</label>
+    </div>
+
+    <!-- Q8 -->
+    <div class="pregunta" data-qid="q8" data-type="single">
+      <h3>8. Adreça de <em>broadcast</em> de <code>192.168.0.5 /16</code>?</h3>
+      <label><input type="radio" name="q8" value="192.168.0.255">192.168.0.255</label>
+      <label><input type="radio" name="q8" value="192.168.255.255">192.168.255.255</label>
+      <label><input type="radio" name="q8" value="192.168.1.255">192.168.1.255</label>
+      <label><input type="radio" name="q8" value="192.255.255.255">192.255.255.255</label>
+    </div>
+
+    <!-- Q9 -->
+    <div class="pregunta" data-qid="q9" data-type="single">
+      <h3>9. Adreça de <em>xarxa</em> de <code>172.16.40.25 /16</code>?</h3>
+      <label><input type="radio" name="q9" value="172.16.0.0">172.16.0.0</label>
+      <label><input type="radio" name="q9" value="172.16.40.0">172.16.40.0</label>
+      <label><input type="radio" name="q9" value="172.16.255.0">172.16.255.0</label>
+      <label><input type="radio" name="q9" value="172.0.0.0">172.0.0.0</label>
+    </div>
+
+    <!-- Q10 -->
+    <div class="pregunta" data-qid="q10" data-type="single">
+      <h3>10. Adreça de <em>broadcast</em> de <code>172.16.40.25 /16</code>?</h3>
+      <label><input type="radio" name="q10" value="172.16.255.255">172.16.255.255</label>
+      <label><input type="radio" name="q10" value="172.16.40.255">172.16.40.255</label>
+      <label><input type="radio" name="q10" value="172.16.0.255">172.16.0.255</label>
+      <label><input type="radio" name="q10" value="172.255.255.255">172.255.255.255</label>
+    </div>
+
+    <!-- Q11 -->
+    <div class="pregunta" data-qid="q11" data-type="single">
+      <h3>11. Adreça de <em>xarxa</em> de <code>10.0.10.0 /8</code>?</h3>
+      <label><input type="radio" name="q11" value="10.0.0.0">10.0.0.0</label>
+      <label><input type="radio" name="q11" value="10.0.10.0">10.0.10.0</label>
+      <label><input type="radio" name="q11" value="10.255.255.0">10.255.255.0</label>
+      <label><input type="radio" name="q11" value="10.0.255.0">10.0.255.0</label>
+    </div>
+
+    <!-- Q12 -->
+    <div class="pregunta" data-qid="q12" data-type="single">
+      <h3>12. Adreça de <em>broadcast</em> de <code>10.10.0.1 /8</code>?</h3>
+      <label><input type="radio" name="q12" value="10.0.0.255">10.0.0.255</label>
+      <label><input type="radio" name="q12" value="10.10.255.255">10.10.255.255</label>
+      <label><input type="radio" name="q12" value="10.255.255.255">10.255.255.255</label>
+      <label><input type="radio" name="q12" value="10.0.255.255">10.0.255.255</label>
+    </div>
+
+    <!-- Q13 multi -->
+    <div class="pregunta" data-qid="q13" data-type="multi">
+      <h3>13. Quines IPs són <em>hosts vàlids</em> dins de <code>192.168.1.0 /24</code>? (tria totes les que corresponguin)</h3>
+      <label><input type="checkbox" name="q13" value="192.168.1.0">192.168.1.0</label>
+      <label><input type="checkbox" name="q13" value="192.168.1.1">192.168.1.1</label>
+      <label><input type="checkbox" name="q13" value="192.168.1.255">192.168.1.255</label>
+      <label><input type="checkbox" name="q13" value="192.168.1.128">192.168.1.128</label>
+    </div>
+
+    <!-- Q14 match -->
+    <div class="pregunta" data-qid="q14" data-type="match">
+      <h3>14. Classifica segons <code>/24</code></h3>
+      <div class="grid-2">
+        <div>
+          <div class="small"><code>192.168.2.0</code></div>
+          <select data-item="192.168.2.0">
+            <option value="">-- Selecciona --</option>
+            <option value="xarxa">Xarxa</option>
+            <option value="broadcast">Broadcast</option>
+            <option value="host">Host</option>
+          </select>
+        </div>
+        <div>
+          <div class="small"><code>192.168.2.255</code></div>
+          <select data-item="192.168.2.255">
+            <option value="">-- Selecciona --</option>
+            <option value="xarxa">Xarxa</option>
+            <option value="broadcast">Broadcast</option>
+            <option value="host">Host</option>
+          </select>
+        </div>
+        <div>
+          <div class="small"><code>192.168.2.34</code></div>
+          <select data-item="192.168.2.34">
+            <option value="">-- Selecciona --</option>
+            <option value="xarxa">Xarxa</option>
+            <option value="broadcast">Broadcast</option>
+            <option value="host">Host</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</div>
+
+</body>
+</html>
