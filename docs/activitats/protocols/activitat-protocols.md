@@ -77,18 +77,18 @@
 - **Demo** (dues opcions):  
   1) **Switch real / Packet Tracer**: crear VLAN 10/20, assignar ports access, crear un **trunk** i provar connectivitat intra-VLAN.  
   2) **Linux**: subinterfícies VLAN i captura del **tag**:
-     ``bash
+     ```bash
      # Crear subinterfície VLAN 10 sobre eth0
      sudo ip link add link eth0 name eth0.10 type vlan id 10
      sudo ip addr add 192.168.10.2/24 dev eth0.10
      sudo ip link set eth0.10 up
      # (Repetir amb VLAN 20 en un altre host o en un namespace)
-     ``
+     ```
      - Comprova la connectivitat **només** entre hosts de la mateixa VLAN.  
      - Captura **802.1Q** en un enllaç **trunk** amb Wireshark o tcpdump:
-       ``bash
+       ```bash
        sudo tcpdump -i eth0 -en vlan
-       ``
+       ```
 - **Ethertype**: 0x8100. **Filtre Wireshark**: `vlan`.  
 - **Mini-activitat**: configura un **trunk** i mostra un paquet amb **tag VLAN**; explica **PVID** en un port access.
 
